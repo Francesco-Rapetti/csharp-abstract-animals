@@ -35,12 +35,16 @@ namespace csharp_abstract_animals
             Delfino delfino = new();
             cane.Mangia();
             cane.Verso();
+            cane.Dormi();
             passerotto.Mangia();
             passerotto.Verso();
+            passerotto.Dormi();
             aquila.Mangia();
             aquila.Verso();
+            aquila.Dormi();
             delfino.Mangia();
             delfino.Verso();
+            delfino.Dormi();
         }
 
         static string Prettifier(string input)
