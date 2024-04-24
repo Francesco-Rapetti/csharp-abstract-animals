@@ -45,6 +45,21 @@ namespace csharp_abstract_animals
             delfino.Mangia();
             delfino.Verso();
             delfino.Dormi();
+
+            // Esercizio 2
+            Console.WriteLine(Prettifier("Esercizio 2 : interfacce"));
+            FaiVolare(aquila);
+            FaiNuotare(delfino);
+        }
+
+        static void FaiVolare(IVolante animale)
+        {
+            animale.Vola();
+        }
+
+        static void FaiNuotare(INuotante animale)
+        {
+            animale.Nuota();
         }
 
         static string Prettifier(string input)
