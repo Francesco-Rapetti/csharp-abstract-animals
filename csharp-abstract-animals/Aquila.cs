@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    internal class Aquila : Animale
+    internal class Aquila : Animale,  IVolante
     {
         public override void Mangia()
         {
@@ -16,6 +16,11 @@ namespace csharp_abstract_animals
         public override void Verso()
         {
             Console.WriteLine("Stridio");
+        }
+
+        public void Vola()
+        {
+            Console.WriteLine("Aquila vola");
         }
     }
 }
